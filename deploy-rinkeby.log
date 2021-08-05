@@ -1,0 +1,299 @@
+tor@mac  ~/ad1/opensea-creatures   master ±  truffle deploy --network rinkeby --reset
+
+Compiling your contracts...
+===========================
+✔ Fetching solc version list from solc-bin. Attempt #1
+> Everything is up to date, there is nothing to compile.
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 29970648 (0x1c950d8)
+
+
+1_initial_migrations.js
+=======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > block number:        9062255
+   > block timestamp:     1628173575
+   > account:             0xc847a776197F2f45D84FF83F1ADDb82AC07FD63d
+   > balance:             2.976801943763697274
+   > gas used:            160384 (0x27280)
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000320768 ETH
+
+   -------------------------------------
+   > Total cost:         0.000320768 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Replacing 'Creature'
+   --------------------
+   > block number:        9062257
+   > block timestamp:     1628173620
+   > account:             0xc847a776197F2f45D84FF83F1ADDb82AC07FD63d
+   > balance:             2.972755529763697274
+   > gas used:            1995893 (0x1e7475)
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.003991786 ETH
+
+
+   Deploying 'CreatureFactory'
+   ---------------------------
+   > block number:        9062258
+   > block timestamp:     1628173760
+   > account:             0xc847a776197F2f45D84FF83F1ADDb82AC07FD63d
+   > balance:             2.966713959763697274
+   > gas used:            3020785 (0x2e17f1)
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00604157 ETH
+
+
+   Deploying 'CreatureAccessory'
+   -----------------------------
+   > block number:        9062260
+   > block timestamp:     1628173870
+   > account:             0xc847a776197F2f45D84FF83F1ADDb82AC07FD63d
+   > balance:             2.961365675763697274
+   > gas used:            2642611 (0x2852b3)
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.005285222 ETH
+
+
+   Deploying 'LootBoxRandomness'
+   -----------------------------
+   > block number:        9062267
+   > block timestamp:     1628173946
+   > account:             0xc847a776197F2f45D84FF83F1ADDb82AC07FD63d
+   > balance:             2.959823663763697274
+   > gas used:            489432 (0x777d8)
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000978864 ETH
+
+
+   Linking
+   -------
+   * Contract: CreatureAccessoryLootBox <--> Library: LootBoxRandomness 
+
+   Deploying 'CreatureAccessoryLootBox'
+   ------------------------------------
+   > block number:        9062268
+   > block timestamp:     1628173997
+   > account:             0xc847a776197F2f45D84FF83F1ADDb82AC07FD63d
+   > balance:             2.952834985763697274
+   > gas used:            3494339 (0x3551c3)
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.006988678 ETH
+
+Error: Invalid JSON RPC response: "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
+    at Object.InvalidResponse (/Users/tor/ad1/opensea-creatures/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-core-helpers/src/errors.js:42:1)
+    at t.InvalidResponse [as onreadystatechange] (/Users/tor/ad1/opensea-creatures/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/web3/node_modules/web3-providers-http/src/index.js:92:1)
+    at t._a [as dispatchEvent] (/Users/tor/ad1/opensea-creatures/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:27:61)
+    at t.dispatchEvent [as _setReadyState] (/Users/tor/ad1/opensea-creatures/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:208:1)
+    at t._setReadyState [as _onHttpResponseEnd] (/Users/tor/ad1/opensea-creatures/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:318:1)
+    at IncomingMessage._onHttpResponseEnd (/Users/tor/ad1/opensea-creatures/node_modules/truffle-hdwallet-provider/dist/webpack:/truffle-hdwallet-provider/Users/gnidan/src/work/truffle/node_modules/xhr2-cookies/dist/xml-http-request.js:289:47)
+    at IncomingMessage.emit (events.js:228:7)
+    at endReadableNT (_stream_readable.js:1185:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+
+   Deploying 'CreatureAccessoryFactory'
+   ------------------------------------
+   > block number:        9062269
+   > block timestamp:     1628174049
+   > account:             0xc847a776197F2f45D84FF83F1ADDb82AC07FD63d
+   > balance:             2.950764583763697274
+   > gas used:            1035201 (0xfcbc1)
+   > gas price:           2 gwei
+   > value sent:          0 ETH
+   > total cost:          0.002070402 ETH
+
+   -------------------------------------
+   > Total cost:         0.025356522 ETH
+
+
+Summary
+=======
+> Total deployments:   7
+> Final cost:          0.02567729 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 29999943 (0x1c9c347)
+
+
+1_initial_migrations.js
+=======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0xf2d3867dc06eebec947e39fccccfbee28f8383657af149c6daed9ee76c2d8aea
+   > Blocks: 1            Seconds: 17
+   > contract address:    0xBd8E6FF2D68565D3B4FB6291406a5F8F6354C7Cd
+   > block number:        9062294
+   > block timestamp:     1628174168
+   > account:             0xc847a776197F2f45D84FF83F1ADDb82AC07FD63d
+   > balance:             2.976946027762283802
+   > gas used:            176684 (0x2b22c)
+   > gas price:           1.000000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000176684001413472 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.000176684001413472 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Replacing 'Creature'
+   --------------------
+   > transaction hash:    0x6256557c27e5ad52dac69c6df5e9c771b85f4593bfb341a03935bbf3193a06f4
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x595BB4079eB8d984660926FFD69902346c867261
+   > block number:        9062296
+   > block timestamp:     1628174198
+   > account:             0xc847a776197F2f45D84FF83F1ADDb82AC07FD63d
+   > balance:             2.974780732744961442
+   > gas used:            2119581 (0x20579d)
+   > gas price:           1.000000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.002119581016956648 ETH
+
+
+   Deploying 'CreatureFactory'
+   ---------------------------
+   > transaction hash:    0x1b71accc053fc339bd39a8ea552cd1fc0a9fd0a66f47fa739cd03a6d510f875a
+   > Blocks: 2            Seconds: 21
+   > contract address:    0xF81F8131Cd681988Bf7F53040C536B809493F567
+   > block number:        9062298
+   > block timestamp:     1628174229
+   > account:             0xc847a776197F2f45D84FF83F1ADDb82AC07FD63d
+   > balance:             2.971380759717761658
+   > gas used:            3399973 (0x33e125)
+   > gas price:           1.000000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.003399973027199784 ETH
+
+
+   Deploying 'CreatureAccessory'
+   -----------------------------
+   > transaction hash:    0x0b46a695bebe8bc2793f01fc8b4db360d37e8210931407687aaee2cfd3e0f34f
+   > Blocks: 1            Seconds: 9
+   > contract address:    0x9C93a2872f86784df2c92a3d394D9615629aC064
+   > block number:        9062300
+   > block timestamp:     1628174259
+   > account:             0xc847a776197F2f45D84FF83F1ADDb82AC07FD63d
+   > balance:             2.968548929695107018
+   > gas used:            2802499 (0x2ac343)
+   > gas price:           1.000000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.002802499022419992 ETH
+
+
+   Deploying 'LootBoxRandomness'
+   -----------------------------
+   > transaction hash:    0x6693dd9152fd126a88d39df02588144bc54fbd0e57f573932e40b28d62fabb56
+   > Blocks: 2            Seconds: 21
+   > contract address:    0xf5c8b69231559aF77c6a4D93C4b18E70739e8610
+   > block number:        9062308
+   > block timestamp:     1628174380
+   > account:             0xc847a776197F2f45D84FF83F1ADDb82AC07FD63d
+   > balance:             2.96747972368655337
+   > gas used:            489432 (0x777d8)
+   > gas price:           1.000000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000489432003915456 ETH
+
+
+   Linking
+   -------
+   * Contract: CreatureAccessoryLootBox <--> Library: LootBoxRandomness (at address: 0xf5c8b69231559aF77c6a4D93C4b18E70739e8610)
+
+   Deploying 'CreatureAccessoryLootBox'
+   ------------------------------------
+   > transaction hash:    0x2c1b3e51dd0c52be31a189b0bc51d4375eb64a9d73c36df536813e0c1a07bb7c
+   > Blocks: 1            Seconds: 13
+   > contract address:    0x78bB553442C541b544FBD99Eb2D2B8b152946c81
+   > block number:        9062309
+   > block timestamp:     1628174395
+   > account:             0xc847a776197F2f45D84FF83F1ADDb82AC07FD63d
+   > balance:             2.963813996657227554
+   > gas used:            3665727 (0x37ef3f)
+   > gas price:           1.000000008 gwei
+   > value sent:          0 ETH
+   > total cost:          0.003665727029325816 ETH
+
+
+   Deploying 'CreatureAccessoryFactory'
+   ------------------------------------
+   > transaction hash:    0xf76eb22044b63362f04b4f57bf575eefaeb8ae02f5eaf4c5215b9e6a55910164
+   > Blocks: 2            Seconds: 33
+   > contract address:    0xc001dD52d9137E71Af4d280430506Ee029131c71
+   > block number:        9062312
+   > block timestamp:     1628174440
+   > account:             0xc847a776197F2f45D84FF83F1ADDb82AC07FD63d
+   > balance:             2.962696507647170153
+   > gas used:            1117489 (0x110d31)
+   > gas price:           1.000000009 gwei
+   > value sent:          0 ETH
+   > total cost:          0.001117489010057401 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.013594701109875097 ETH
+
+
+Summary
+=======
+> Total deployments:   7
+> Final cost:          0.013771385111288569 ETH
+
+
+
+
+
+############
+### MINT
+############
+
+ tor@mac  ~/ad1/opensea-creatures   master ±  node scripts/mint.js 
+Minted creature. Transaction: 0x6992677a230f667fae8b2d0668ce2cd5a2c984a21997aff45c4ca87339bc65f6
+Minted creature. Transaction: 0x5eb18e05d7292e0481efa9dd8295b098f60f234e5636e599ecb784af109eace5
+Minted creature. Transaction: 0xf4ef2f4f6a65c5a1c3df63b44f2fe96bffaa15f38684a92eaad6221882fc4b6a
+Minted creature. Transaction: 0x6b13d848c7e2992e493d676f97bdb5cb693c79b1ad9f224d31e58478249342c5
+Minted creature. Transaction: 0xfc7e15d59b6989bf01b6e8679fea8ebcb3a1ed1b61f1ddcf7da1a602e3985988
+Minted creature. Transaction: 0xc83bbe8305b285ebfda926bbfb25b423c31a1dc787038f5b20293fcfc8e73ce2
+Minted creature. Transaction: 0x86a8a0c0ed8ac8eda6479f18bad637ea19440ab8727f066ff3d04c0796204704
+Minted creature. Transaction: 0xef80c6907c01c17ea15e95a334875036fbf766f9434ec5f55cc4dbc3e2e944f9
+Minted creature. Transaction: 0x1dfcf2bbb6914c2da1dc3a1970c811a11043dd47d4638bf91e41fac2f6dc32cf
+Minted creature. Transaction: 0xa602910b305a7b044bea7bd17cbf07dc71f102fcad91c951eccc13abe7899bf7
+Minted creature. Transaction: 0x2d48070da2c9cd327778356f24222cefb8379d97db82c6f84aa30037c0b35a9e
+Minted creature. Transaction: 0x3332a47fce21885f79ca592b762f81ce166cc9d54060c99c9c8969da3b97d28e
+Minted lootbox. Transaction: 0xefaff7ebd55086a00730e807f271572932055afe1b9b1a8cdd722fbc9a677d26
+Minted lootbox. Transaction: 0x38aec0bea54811fab7d708124cf0add57ac9958f413d8cc5c1c140c6090f38cb
+Minted lootbox. Transaction: 0x2e88e66f2ded5f44a7d2b4023a05fdd8f5eeeebc52b5712b5a5c41ee12406725
+Minted lootbox. Transaction: 0xdcfc253240b9159646af199094dad6e2c20b2fa9ed6f278c81aff56ab6819680
